@@ -1,17 +1,27 @@
 <template>
-    <b-jumbotron bg-variant="transparent" text-variant="white">
-    <template v-slot:header>Navendu Krishna Pathak</template>
+    <div>
 
-    <template v-slot:lead>
-      {{ intro }}
-    </template>
+        <b-card
+                class="introcard"
+                bg-variant="transparent" text-variant="white"
+                img-src="./static/images/profile.png"
+                img-height="180vh"
+                img-width="180vh"
+                img-right
 
-    <hr class="my-4">
+        >
+            <b-card-title class="title">Navendu Krishna Pathak</b-card-title>
+            <b-card-text>
+                {{ intro }}
+            </b-card-text>
 
-    <p>
-      {{ sub }}
-    </p>
-  </b-jumbotron>
+            <hr class="my-4">
+
+            <p>
+                {{ sub }}
+            </p>
+        </b-card>
+    </div>
 </template>
 
 <script>
@@ -29,5 +39,11 @@
 </script>
 
 <style scoped>
+    .introcard {
+        border: none;
+    }
+    .title{
+        font-size:5vw;
 
+}
 </style>
