@@ -2,28 +2,27 @@
 <HTML>
 
 <HEAD>
-	<title>Navendu Krishna</title>
+    <title>Navendu Krishna</title>
 
     <!-- Required Stylesheets -->
-    <link type="text/css" rel="stylesheet" href="./static/build/css/base.css" />
+    <link type="text/css" rel="stylesheet" href="./static/build/css/base.css"/>
     <!-- Load polyfills to support older browsers -->
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es2015%2CIntersectionObserver"></script>
 </HEAD>
 <BODY>
-    <div id="app">
-      <b-container class="center">
-         <b-card class="main mb-5" style="background: #0070a0;" text-variant="light">
-            <template v-slot:footer>
-                Please contact me at <a href="mailto:navendu11102379@gmail.com">Navendu Krishna Pathak</a>
-            </template>
-            <intro></intro>
+<div id="app" align="center">
+    <navigation></navigation>
+    <b-container class="center">
+        <b-card class="main mb-5" style="background: #0070a0;" text-variant="light">
+            <router-view></router-view>
+        </b-card>
+    </b-container>
+    <navigation></navigation>
+    <n-footer></n-footer>
+</div>
 
-         </b-card>
-      </b-container>
-    </div>
-
-    <!-- Start running your app -->
-    <script src="./static/build/js/base.js"></script>
+<!-- Start running your app -->
+<script src="./static/build/js/base.js"></script>
 </BODY>
 
 </HTML>
