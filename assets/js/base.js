@@ -20,6 +20,7 @@ Vue.use(IconsPlugin)
 Vue.use(VueRouter)
 
 const routes = [
+    {path: '/', redirect: '/profile'},
     {path: '/profile', component: Intro},
     {path: '/experience', component: Experience},
     {path: '/skills', component: Skills},
