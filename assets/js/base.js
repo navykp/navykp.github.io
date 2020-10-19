@@ -12,6 +12,7 @@ import Academics from "./views/Academics";
 import Contact from "./views/Contact";
 import Navigation from "./components/Navigation";
 import NFooter from "./components/NFooter";
+import SkillWheel from "./components/SkillWheel";
 // Install BootstrapVue
 Vue.use(BootstrapVue)
 // Optionally install the BootstrapVue icon components plugin
@@ -31,7 +32,7 @@ const router = new VueRouter({
 })
 const app = new Vue({
         el: '#app',
-        components: {Intro, Experience, Skills, Contact, Academics, Navigation, NFooter
+        components: {Intro, Experience, Skills, Contact, Academics, Navigation, NFooter, SkillWheel
         },
         router: router,
         data() {
