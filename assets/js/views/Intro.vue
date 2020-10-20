@@ -11,27 +11,33 @@
 
         >
             <b-card-title class="title">Navendu Krishna Pathak</b-card-title>
-            <b-card-text>
-                {{ intro }}
-            </b-card-text>
-
-            <hr class="my-4">
-
-            <p>
+            <b-card-text class="card-subtitle">
                 {{ sub }}
-            </p>
+            </b-card-text>
         </b-card>
+        <hr class="my-4">
+        <about :abt="intro" :subIntro="subintro"></about>
+        <hr class="my-4">
+        <interests></interests>
+
     </div>
 </template>
 
 <script>
+    import About from "../components/About";
+    import Interests from "../components/Interests";
+
     export default {
         name: "Intro",
+        components: {About, Interests},
         data() {
             return {
-                intro: 'Experienced consultant with Deloitte USI in systems engineering domain,' +
-                    ' and is responsible for requirement gathering, development and maintenance of Web/Windows' +
+                intro: 'I am an experienced consultant with Deloitte USI in systems engineering domain,' +
+                    ' and I have bene responsible for requirement gathering, development and maintenance of Web/Windows' +
                     ' applications which provide enterprise solutions to organisations world-wide.',
+                subintro: 'Following the footprints of my father, I became an engineer feeding my inquisitive nature' +
+                    ' and passion for exploration. I enjoy picking apart electronic equipment and then putting it back together.' +
+                    'I have a bachelors in Electronics and Communications Engineering from Jaypee Institute of Information Technology',
                 sub: 'Engineer, Artist, Entrepreneur'
             }
         }
@@ -42,8 +48,9 @@
     .introcard {
         border: none;
     }
-    .title{
-        font-size:5vw;
 
-}
+    .title {
+        font-size: 5vw;
+
+    }
 </style>
