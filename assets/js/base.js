@@ -16,6 +16,7 @@ import SkillWheel from "./components/SkillWheel";
 import About from "./components/About";
 import JobDesc from "./components/JobDesc";
 import NDate from "./components/NDate";
+import Accomplishments from "./components/Accomplishments";
 // Install BootstrapVue
 Vue.use(BootstrapVue)
 // Optionally install the BootstrapVue icon components plugin
@@ -38,7 +39,7 @@ const app = new Vue({
         el: '#app',
         components: {Intro, Experience, Skills, Contact,
             Academics, Navigation, NFooter, SkillWheel,
-            About, NDate, JobDesc
+            About, NDate, JobDesc, Accomplishments
         },
         router: router,
         data() {

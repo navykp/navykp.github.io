@@ -18,7 +18,6 @@
     }
 
     .calendar-icon {
-        height: 7vh;
-        width: 7vh;
+        height:4vh;
     }
 </style>

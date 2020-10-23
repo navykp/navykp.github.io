@@ -2,9 +2,9 @@
     <div>
         <b-button v-b-toggle="this._uid+'1'" id="jobbtn" class="w-100 jobdesc">
             <b-card-title>{{ title }}</b-card-title>
-            <b-card-sub-title>
+            <b-card-text>
                 <n-date :start="start" :end="end"></n-date>
-            </b-card-sub-title>
+            </b-card-text>
         </b-button>
         <b-collapse :id="this._uid+'1'" class="collapse">
             <br>
@@ -64,8 +64,8 @@
 <style scoped>
     .jobdesc {
         box-shadow: 0px 10px 14px -7px #192b71;
-        background: #04389a linear-gradient(to bottom, #0047cd 5%, #002d90 100%);
-        border-radius: 8px;
+        background: #04389a linear-gradient(to bottom, #0047cd 5%, #19408E 100%);
+        border-radius: 1px;
         display: inline-block;
         cursor: pointer;
         color: #ffffff;
@@ -75,7 +75,7 @@
     }
 
     .jobdesc:hover {
-        background: #04389a linear-gradient(to bottom, #002d90 5%, #0047cd 100%);
+        background: #04389a linear-gradient(to bottom, #19408E 5%, #0047cd 100%);
     }
 
     .jobdesc:active {
@@ -88,7 +88,7 @@
 }
     .collapse{
         background: rgba(91, 144, 252, 0.69);
-        border-radius: 8px;
+        border-radius: 1px;
 
 
     }

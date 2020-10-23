@@ -4,7 +4,7 @@
             <b-row>
                 <b-col class="col-md-12 center">
                     <b-img-lazy class="icon" src="./static/graphics/briefcase.svg"></b-img-lazy>
-                    <b><i><h4>Experience</h4></i></b>
+                    <b><i><h4>Work Experience</h4></i></b>
                 </b-col>
             </b-row>
             <br>
@@ -21,16 +21,32 @@
                     ></job-desc>
                 </b-card>
                 </span>
+        <br>
+        <hr class="mb-4">
+        <br>
+        <b-container>
+            <b-row>
+                <b-col class="col-md-12 center">
+                    <b-img-lazy class="icon" src="./static/graphics/olive.svg"></b-img-lazy>
+                    <b><i><h4>Awards &amp; Certifications</h4></i></b>
+                </b-col>
+            </b-row>
+            <br>
+            <br>
+            <accomplishments></accomplishments>
+        </b-container>
+
     </div>
 </template>
 
 <script>
     import JobDesc from "../components/JobDesc";
     import NDate from "../components/NDate";
+    import Accomplishments from "../components/Accomplishments";
 
     export default {
         name: "Experience.vue",
-        components: {JobDesc, NDate},
+        components: {JobDesc, NDate, Accomplishments},
         data() {
             return {
                 joblist: [
