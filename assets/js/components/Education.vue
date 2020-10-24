@@ -10,19 +10,37 @@
         <br>
         <br>
         <span v-if="projects !== null">
-            <b-col class="w-100" >
+            <b-col class="w-100">
                 <hr class="mt-5">
                <h5><i>Projects</i></h5>
             </b-col>
         </span>
         <span class="projectCard" v-for="project in projects" :key="project.name">
             <b-card class="project">
-                <b-col>{{project.name}}</b-col>
+                <b-col class="projTitle">{{project.name}}</b-col>
+                <p class="projDesc">{{ project.desc }}</p>
+                <span v-if="project.img !== null">
+                <b-img-lazy class="illustration"
+                            :src="project.img"
+                ></b-img-lazy>
+                    </span>
+                <span v-if="project.website !== null">
+                    <b-embed
+                            type="iframe"
+                            :src="project.website"
+                            aspect="16by9"
+                    />
+                </span>
+                <p v-if="project.techs !== null">Technology:
+                <span style="display: inline" v-for="tech in project.techs" v-bind:key="tech">
+                    <b-img-lazy class="skicon" :src="tech"/>
+                </span>
+                </p>
             </b-card>
         </span>
         <br>
         <span v-if="extras !== null">
-            <b-col class="w-100" >
+            <b-col class="w-100">
                 <hr class="mt-5">
                <h5><i>Extra-Curricular Activities</i></h5>
             </b-col>
@@ -57,10 +75,11 @@
 
     .projectCard {
         margin: 2%;
-        display: inline-block;
+        display: -webkit-inline-flex;
     }
 
     .project {
+
         transition: all 1s ease;
         transform: scale(1);
         -webkit-box-shadow: 0 0 13px 0 rgba(0, 0, 0, 0.59);
@@ -71,5 +90,30 @@
 
     .project:hover {
         transform: scale(1.2) perspective(2px);
+    }
+
+    .projTitle {
+        text-align: center;
+        font-size: 2vh;
+        font-weight: bold;
+
+    }
+
+    .projDesc {
+        text-align: justify;
+        font-size: 2vh;
+        font-weight: lighter;
+    }
+
+    .illustration {
+        height: 40vh;
+    }
+
+    .illustration:hover {
+        transform: scale(1.2) perspective(2px);
+    }
+
+    .skicon {
+        width: 2vw;
     }
 </style>

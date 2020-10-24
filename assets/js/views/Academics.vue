@@ -62,10 +62,24 @@
                     'degree': '  Bachelors of Technology',
                     'specialization': '  Electronics & Communications Engineering',
                     'subjects': '  Image processing & Information Systems',
-                    'projects': [{'name': 'Text Recognition in Natural Images'},
-                        {'name': 'Criminal Identification Information System'},
-                        {'name': 'Digital Directory Management System'},
-                        {'name': 'Pulse Width Modulator'}],
+                    'projects': [
+                        {'name': 'Text Recognition in Natural Images',
+                        'desc': 'I developed an text recognition algorithm for detecting text in natural images.' +
+                            ' I utilize classic image recognition techniques to extract the text features in a natural image' +
+                            'detect edges and calculate the text image. Illustration below shows the algorithmic flow' +
+                            ' The final output is passed through an OCR for reading the detected text.',
+                        'img': './static/images/text_recognition.png',
+                        'techs': ['./static/images/matlab.png'],
+                        'website': null},
+                        {'name': 'Criminal Identification Information System',
+                        'desc': 'I developed a Criminal Identification Information System in Java.' +
+                            'A User can upload information/ report crimes/ and identify criminals by specifying the' +
+                            ' features of a criminals face',
+                        'techs': ['./static/images/java.png'],
+                        'img': null,
+                        'website': 'https://pmath2012.wixsite.com/projectreport/gui'},
+                        {'name': 'Digital Directory Management System', 'techs': null, 'website':null},
+                        {'name': 'Pulse Width Modulator', 'techs': null, 'website':null}],
                     'extras': [{'name': 'Drama & Theater'}, {'name':'Model United Nations'}],
                     'img': './static/images/jiit.png'
                 },
