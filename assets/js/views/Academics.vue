@@ -82,7 +82,7 @@
                             'desc': 'In this project I implemented a skeleton information system using C and SQL database.' +
                                 'The work involved developing a graphical UI using C graph library and interfacing' +
                                 ' with the database  and providing a detailed information retrieval UI',
-                            'img': 'null', 'techs': ['./static/images/c.png', './static/images/mysql.png'], 'website':'null'},
+                            'img': 'null', 'techs': ['./static/images/C.png', './static/images/mysql.png'], 'website':'null'},
                         {'name': 'Pulse Width Modulator',
                             'desc': 'In this project I implemented a pulse width modulator using physical Integrated Circuits' +
                                 ' and operational amplifiers.',
