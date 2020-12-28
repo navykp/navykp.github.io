@@ -2024,6 +2024,11 @@ concat-map@0.0.1:
   resolved "https://registry.yarnpkg.com/concat-map/-/concat-map-0.0.1.tgz#d8a96bd77fd68df7793a73036a3ba0d5405d477b"
   integrity sha1-2Klr13/Wjfd5OnMDajug1UBdR3s=
 
+concat-stream@0.0.7:
+  version "0.0.7"
+  resolved "https://registry.yarnpkg.com/concat-stream/-/concat-stream-0.0.7.tgz#e137e38f946261bbefba4b5037ccc43d5aa8f3c3"
+  integrity sha1-4Tfjj5RiYbvvuktQN8zEPVqo88M=
+
 concat-stream@^1.5.0:
   version "1.6.2"
   resolved "https://registry.yarnpkg.com/concat-stream/-/concat-stream-1.6.2.tgz#904bdf194cd3122fc675c77fc4ac3d4ff0fd1a34"
@@ -4309,6 +4314,13 @@ md5@^2.2.1:
     charenc "0.0.2"
     crypt "0.0.2"
     is-buffer "~1.1.6"
+
+mdb@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/mdb/-/mdb-0.1.0.tgz#ebc9a9e6ecbcb88c9fc9c89b84ed2812912b1259"
+  integrity sha1-68mp5uy8uIyfycibhO0oEpErElk=
+  dependencies:
+    concat-stream "0.0.7"
 
 mdn-data@2.0.4:
   version "2.0.4"

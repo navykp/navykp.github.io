@@ -1,7 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
-
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 
@@ -19,12 +18,12 @@ import NDate from "./components/NDate";
 import Accomplishments from "./components/Accomplishments";
 import Education from "./components/Education";
 import ProjectDescription from "./components/ProjectDescription";
+import SkillDisplay from "./components/SkillDisplay";
 // Install BootstrapVue
 Vue.use(BootstrapVue)
 // Optionally install the BootstrapVue icon components plugin
 Vue.use(IconsPlugin)
 Vue.use(VueRouter)
-
 const routes = [
     {path: '/', redirect: '/profile'},
     {path: '/profile', component: Intro},
@@ -42,7 +41,7 @@ const app = new Vue({
         components: {Intro, Experience, Skills, Contact,
             Academics, Navigation, NFooter, SkillWheel,
             About, NDate, JobDesc, Accomplishments, Education,
-            ProjectDescription
+            ProjectDescription, SkillDisplay
         },
         router: router,
         data() {

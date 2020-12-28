@@ -11,7 +11,7 @@
             <br>
         </b-container>
         <span class="jobs" v-for="job in joblist" v-bind:key="job.title">
-                <b-card class='jobdesc' bg-variant="transparent" style="border:none;">
+                <b-card class='jobdesc' bg-variant="transparent" >
                     <job-desc :title="job.title"
                               :start="job.start"
                               :end="job.end"
@@ -113,9 +113,11 @@
     }
 
     .jobs {
-        display: inline-flex;
+        display: inline;
     }
     .jobdesc{
-        width: 30vw;
+        width: 50vw;
+        border: none;
+        display: inline-flex;
     }
 </style>

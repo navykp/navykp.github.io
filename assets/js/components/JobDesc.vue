@@ -1,10 +1,13 @@
 <template>
     <div>
-        <b-button v-b-toggle="this._uid+'1'" id="jobbtn" class="w-100 jobdesc">
+        <b-button v-b-toggle="this._uid+'1'" id="jobbtn" class="w-100 jobdesc"  v-on:click="doRotate()">
             <b-card-title>{{ title }}</b-card-title>
             <b-card-text>
                 <n-date :start="start" :end="end"></n-date>
             </b-card-text>
+            <aside style="float: right">
+                <b-icon-arrow-down :id="this._uid+'downIcon'" class="rt"></b-icon-arrow-down>
+            </aside>
         </b-button>
         <b-collapse :id="this._uid+'1'" class="collapse">
             <br>
@@ -49,13 +52,17 @@
         name: "JobDesc",
         components: {NDate},
         props: ['title', 'start', 'end', 'desc', 'tech', 'org'],
-        data () {
-            return {
-            }
+        data() {
+            return {}
         },
         methods: {
             imgUrl: function (name) {
                 return './static/images/' + name + '.png'
+            },
+            doRotate: function() {
+                console.log(this._uid)
+                let el = document.getElementById(this._uid+'downIcon')
+                el.classList.toggle('down')
             }
         },
     }
@@ -82,25 +89,42 @@
         position: relative;
         top: 1px;
     }
-.orgIcon{
-    height: 2vw;
 
-}
-    .collapse{
+    .orgIcon {
+        height: 2vw;
+
+    }
+
+    .collapse {
         background: rgba(91, 144, 252, 0.69);
         border-radius: 1px;
 
 
     }
-.desc{
-    text-align: left;
-}
-    .techList{
+
+    .desc {
+        text-align: left;
+    }
+
+    .techList {
         alignment: left;
         display: inline-flex;
     }
-    .techIcon{
+
+    .techIcon {
         width: 5vh;
         height: 5vh;
+    }
+
+    .rt {
+        -moz-transition: all .5s linear;
+        -webkit-transition: all .5s linear;
+        transition: all .5s linear;
+    }
+
+    .rt.down {
+        -moz-transform: rotate(180deg);
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
     }
 </style>
