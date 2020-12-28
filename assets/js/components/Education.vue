@@ -16,29 +16,15 @@
             </b-col>
         </span>
         <span class="projectCard" v-for="project in projects" :key="project.name">
-            <b-card class="project">
-                <b-col class="projTitle">{{project.name}}</b-col>
-                <p class="projDesc">{{ project.desc }}</p>
-                <span v-if="project.img !== null">
-                <b-img-lazy class="illustration"
-                            :src="project.img"
-                ></b-img-lazy>
-                    </span>
-                <span v-if="project.website !== null">
-                    <b-embed
-                            type="iframe"
-                            :src="project.website"
-                            aspect="16by9"
-                    />
-                </span>
-                <p v-if="project.techs !== null">Technology:
-                <span style="display: inline" v-for="tech in project.techs" v-bind:key="tech">
-                    <b-img-lazy class="skicon" :src="tech"/>
-                </span>
-                </p>
-            </b-card>
-        </span>
-        <br>
+            <ProjectDescription
+                    :name="project.name"
+                    :description="project.desc"
+                    :techs = "project.techs"
+                    :img = "project.img"
+                    :website="project.website"
+            ></ProjectDescription>
+
+            <br></span>
         <span v-if="extras !== null">
             <b-col class="w-100">
                 <hr class="mt-5">
@@ -57,8 +43,10 @@
 </template>
 
 <script>
+    import ProjectDescription from "./ProjectDescription";
     export default {
         name: "Education",
+        components: {ProjectDescription},
         props: ['degree', 'specialization', 'subjects', 'projects', 'extras', 'img']
     }
 </script>
@@ -69,8 +57,6 @@
         height: 35vh;
         position: absolute;
         right: 0;
-        background: rgb(255, 255, 255);
-        background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 66%);
     }
 
     .projectCard {
@@ -92,28 +78,5 @@
         transform: scale(1.2) perspective(2px);
     }
 
-    .projTitle {
-        text-align: center;
-        font-size: 2vh;
-        font-weight: bold;
 
-    }
-
-    .projDesc {
-        text-align: justify;
-        font-size: 2vh;
-        font-weight: lighter;
-    }
-
-    .illustration {
-        height: 40vh;
-    }
-
-    .illustration:hover {
-        transform: scale(1.2) perspective(2px);
-    }
-
-    .skicon {
-        width: 2vw;
-    }
 </style>

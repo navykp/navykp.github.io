@@ -18,6 +18,7 @@ import JobDesc from "./components/JobDesc";
 import NDate from "./components/NDate";
 import Accomplishments from "./components/Accomplishments";
 import Education from "./components/Education";
+import ProjectDescription from "./components/ProjectDescription";
 // Install BootstrapVue
 Vue.use(BootstrapVue)
 // Optionally install the BootstrapVue icon components plugin
@@ -40,7 +41,8 @@ const app = new Vue({
         el: '#app',
         components: {Intro, Experience, Skills, Contact,
             Academics, Navigation, NFooter, SkillWheel,
-            About, NDate, JobDesc, Accomplishments, Education
+            About, NDate, JobDesc, Accomplishments, Education,
+            ProjectDescription
         },
         router: router,
         data() {

@@ -88,8 +88,8 @@
                     },
                     {
                         'title': 'Systems Engineer',
-                        'end': "September'15",
-                        'start': "February'16",
+                        'start': "September'15",
+                        'end': "February'16",
                         'desc': 'Worked on a project titled AIRBUS Control Specification System (Batch Application)' +
                             ' for AIRBUS (Toulouse), France with a team of 10 members as a Systems Engineer.' +
                             ' ACSS is a background batch application. It collects data by simulating real flight conditions' +

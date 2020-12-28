@@ -70,16 +70,23 @@
                             ' The final output is passed through an OCR for reading the detected text.',
                         'img': './static/images/text_recognition.png',
                         'techs': ['./static/images/matlab.png'],
-                        'website': null},
+                        'website': 'null'},
                         {'name': 'Criminal Identification Information System',
                         'desc': 'I developed a Criminal Identification Information System in Java.' +
                             'A User can upload information/ report crimes/ and identify criminals by specifying the' +
                             ' features of a criminals face',
                         'techs': ['./static/images/java.png'],
-                        'img': null,
+                        'img': 'null',
                         'website': 'https://pmath2012.wixsite.com/projectreport/gui'},
-                        {'name': 'Digital Directory Management System', 'techs': null, 'website':null},
-                        {'name': 'Pulse Width Modulator', 'techs': null, 'website':null}],
+                        {'name': 'Digital Directory Management System',
+                            'desc': 'In this project I implemented a skeleton information system using C and SQL database.' +
+                                'The work involved developing a graphical UI using C graph library and interfacing' +
+                                ' with the database  and providing a detailed information retrieval UI',
+                            'img': 'null', 'techs': ['./static/images/c.png', './static/images/mysql.png'], 'website':'null'},
+                        {'name': 'Pulse Width Modulator',
+                            'desc': 'In this project I implemented a pulse width modulator using physical Integrated Circuits' +
+                                ' and operational amplifiers.',
+                            'img':'null', 'techs': null, 'website':'null'}],
                     'extras': [{'name': 'Drama & Theater'}, {'name':'Model United Nations'}],
                     'img': './static/images/jiit.png'
                 },
@@ -89,7 +96,7 @@
                     'subjects': null,
                     'projects': null,
                     'extras': null,
-                    'img': './static/images/stjo.png'
+                    'img': './static/graphics/academics.svg'
                 },
                 highSchool: {
                     'degree': 'Indian Certificate of Secondary Education (ICSE)',
@@ -97,7 +104,7 @@
                     'subjects': 'English, Social Studies, Biology ',
                     'projects': null,
                     'extras': null,
-                    'img': './static/images/stjo.png'
+                    'img': './static/graphics/academics.svg'
                 }
             }
         },
