@@ -19,6 +19,9 @@ import Accomplishments from "./components/Accomplishments";
 import Education from "./components/Education";
 import ProjectDescription from "./components/ProjectDescription";
 import SkillDisplay from "./components/SkillDisplay";
+import EITApplication from "./views/EITApplication";
+import VideoComponent from "./components/VideoComponent";
+
 // Install BootstrapVue
 Vue.use(BootstrapVue)
 // Optionally install the BootstrapVue icon components plugin
@@ -41,7 +44,7 @@ const app = new Vue({
         components: {Intro, Experience, Skills, Contact,
             Academics, Navigation, NFooter, SkillWheel,
             About, NDate, JobDesc, Accomplishments, Education,
-            ProjectDescription, SkillDisplay
+            ProjectDescription, SkillDisplay, EITApplication, VideoComponent
         },
         router: router,
         data() {
