@@ -1,14 +1,11 @@
 <template>
     <div>
         <br>
+
         <b-card-title class="text-white"><i>{{title}}</i></b-card-title>
-        <b-embed
-            type="iframe"
-            aspect="16by9"
-            :src="videoLink"
-            allowfullscreen
-            >
-        </b-embed>
+        <iframe width="760" height="515" :src="videoLink" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+                 gyroscope; picture-in-picture" allowfullscreen></iframe>
         <p class="text-white"><i>{{summary}}</i></p>
     </div>
 </template>

@@ -17,7 +17,6 @@
                 ></video-component>
             </b-tab>
             <b-tab lazy title="Autonomous Systems"
-                   active
                    title-item-class="text-white"
             >
                 <video-component :video-link="autoLink"
@@ -41,11 +40,11 @@
                 welcome : 'Welcome to my EIT Digital Video Application',
                 subhead : 'In support of my Application to the EIT Digital Master School,' +
                     ' Please click on the tab for the corresponding track',
-                hcidLink : 'https://www.youtube.com/watch?reload=9&v=xBIu-HFDqu4&feature=youtu.be',
+                hcidLink : 'https://www.youtube.com/embed/xBIu-HFDqu4',
                 hcidTitle: 'Wearable Vision For the Visually Impaired',
                 hcidSummary: 'A vision based device in conjunction with audio and haptic feedback' +
                     ' devices to restore autonomy of the visually impaired',
-                autoLink : 'https://www.youtube.com/watch?v=93hq0YU3Gqk&ab_channel=WildCandy',
+                autoLink : 'https://www.youtube.com/embed/93hq0YU3Gqk',
                 autoTitle: 'Automation in Air Pollution Reduction',
                 autoSummary: 'A dual aerial drone system fitted with an air filter mesh to effectively tackle the problem of air pollution.'
 
