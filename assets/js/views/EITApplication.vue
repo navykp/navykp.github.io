@@ -40,11 +40,11 @@
                 welcome : 'Welcome to my EIT Digital Video Application',
                 subhead : 'In support of my Application to the EIT Digital Master School,' +
                     ' Please click on the tab for the corresponding track',
-                hcidLink : 'https://www.youtube.com/embed/xBIu-HFDqu4',
+                hcidLink : 'https://www.youtube.com/embed/kMoyYIz6vzo',
                 hcidTitle: 'Wearable Vision For the Visually Impaired',
                 hcidSummary: 'A vision based device in conjunction with audio and haptic feedback' +
                     ' devices to restore autonomy of the visually impaired',
-                autoLink : 'https://www.youtube.com/embed/93hq0YU3Gqk',
+                autoLink : 'https://www.youtube.com/embed/QxuAPsP7biw',
                 autoTitle: 'Automation in Air Pollution Reduction',
                 autoSummary: 'A dual aerial drone system fitted with an air filter mesh to effectively tackle the problem of air pollution.'
 
